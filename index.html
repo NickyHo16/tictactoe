@@ -8,10 +8,94 @@
     <title>TicTacToe</title>
 
     <link rel="stylesheet" href="style.css">
-    <sript src="script.js"></sript>
+    <script src="script.js"></script>
 </head>
 
 <body>
+
+
+    <span class="d-none" id="winner"></span>
+    <button id="restart-btn" class="restart-btn d-none" onclick="window.location.reload();">Restart</button>
+    <div class="player-panel">
+        <div class="player-inactiv" id="player-1">
+            <img class="crab" src="img\crab3.png">Player 1
+        </div>
+        <div class="" id="player-2">
+            <img class="starfish" src="img\starfish.png">Player 2
+        </div>
+    </div>
+    <div class="play-card">
+        <img class="game-over d-none shark" id="game-over" src="img\shark2.png">
+        <div id="line-1" class="hoizontal-line" style="top: 62px; left:15px"></div>
+        <div id="line-2" class="hoizontal-line" style="top: 202px; left:15px"></div>
+        <div id="line-3" class="hoizontal-line" style="top: 342px;left:15px"></div>
+        <div id="line-4" class="hoizontal-line make-vertical" style="top: 202px; left:-124px;"></div>
+        <div id="line-5" class="hoizontal-line make-vertical" style="top: 202px; left:15px;"></div>
+        <div id="line-6" class="hoizontal-line make-vertical" style="top: 202px; left:156px;"></div>
+        <div id="line-7" class="hoizontal-line"
+            style="top: 200px; right:-42px; transform: rotate(45deg) scaleX(0.0); width: 500px; ">
+        </div>
+        <div id="line-8" class="hoizontal-line"
+            style="top: 201px; left:-44px; transform: rotate(-45deg) scaleX(0.0); width: 500px; ">
+        </div>
+
+        <table>
+
+            <tr>
+                <td onclick="fillShape(0)">
+                    <img id="circle-0" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-0" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(1)">
+                    <img id="circle-1" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-1" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(2)">
+                    <img id="circle-2" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-2" class="shape d-none" src="img\starfish.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(3)">
+                    <img id="circle-3" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-3" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(4)">
+                    <img id="circle-4" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-4" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(5)">
+                    <img id="circle-5" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-5" class="shape d-none" src="img\starfish.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(6)">
+                    <img id="circle-6" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-6" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(7)">
+                    <img id="circle-7" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-7" class="shape d-none" src="img\starfish.png">
+                </td>
+                <td onclick="fillShape(8)">
+                    <img id="circle-8" class="shape d-none crab" src="img\crab3.png">
+                    <img id="cross-8" class="shape d-none" src="img\starfish.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <a
+            href="https://de.freepik.com/vektoren-kostenlos/unter-dem-meer-hintergrund-fuer-videokonferenzen_9470396.htm#query=unterwasserwelt&position=4&from_view=keyword&track=sph">Bild
+            von pikisuperstar</a> auf Freepik
+        <a href="https://www.freepik.com/free-vector/red-crab-cartoon-design_27185732.htm">Image by brgfx</a> on
+        Freepik
+        <a href="https://www.vecteezy.com/free-vector/cartoon-shark">Cartoon Shark Vectors by Vecteezy</a>
+
+    </div>
+
 
 </body>
 
